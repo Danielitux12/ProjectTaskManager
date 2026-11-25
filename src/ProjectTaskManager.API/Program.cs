@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ProjectTaskManager.API.Middleware;
 using ProjectTaskManager.Application.Interfaces;
 using ProjectTaskManager.Application.Services;
 using ProjectTaskManager.Infrastructure.Persistence;
@@ -33,6 +34,9 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
+
+// Middleware global de excepciones
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
