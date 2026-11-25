@@ -1,0 +1,20 @@
+## Build and output folders
+[Bb]in/
+[Oo]bj/
+out/
+
+## Visual Studio & Rider
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+
+## Test & temporary files
+TestResults/
+*.log
+
+## OS generated files
+.DS_Store
+Thumbs.db
