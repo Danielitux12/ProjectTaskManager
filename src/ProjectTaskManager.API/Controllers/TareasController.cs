@@ -9,7 +9,7 @@ namespace ProjectTaskManager.API.Controllers;
 /// Gestión de tareas.
 /// </summary>
 [ApiController]
-[Route("api/tareas")]
+[Route("api/v1/tareas")]
 public class TareasController(ITareaService tareaService) : ControllerBase
 {
     /// <summary>Lista tareas, con filtros opcionales por estado y prioridad.</summary>

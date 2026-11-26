@@ -8,7 +8,7 @@ namespace ProjectTaskManager.API.Controllers;
 /// Gestión de proyectos.
 /// </summary>
 [ApiController]
-[Route("api/proyectos")]
+[Route("api/v1/proyectos")]
 public class ProyectosController(IProyectoService proyectoService, ITareaService tareaService) : ControllerBase
 {
     /// <summary>Obtiene todos los proyectos.</summary>
